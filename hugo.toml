@@ -1,3 +1,44 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://sonder-joker.github.io/'
+homepage = 'https://sonder-joker.github.io/'
+title = '论论子 in real world'
+theme = 'hugo-theme-ladder'
+defaultContentLanguage = 'zh'
+
+[params]
+brand = 'HOME'                   # set the brand of your site
+avatarURL = '/images/avatar.jpg' # avatar, replace your avatar in the /static/images/
+favicon = '/images/avatar.jpg'
+darkModeTheme = 'data-dark-mode'
+
+[params.options]
+showDarkMode = true
+enableImgZooming = true
+enableMultiLang = true
+showMetaTags = true
+
+[params.comments.giscus]
+enable = true
+repo = "sonder-joker/sonder-joker.github.io"
+repo_id = "Rid"
+category = "Announcements"
+category_id = "DIC_id"
+mapping = "pathname"
+position = "top"
+lang = "en"
+
+[[params.social]]
+name = "GitHub"
+pre = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>'
+url = 'https://github.com/sonder-joker'
+
+[languages.zh.params]
+languageName = "中文"
+author = '论论子'
+brand = '主页'
+authorDescription = '也许我什么都不在乎'
+info = '记录我的日常'
+
+[[languages.zh.menu.main]]
+name = "文章"
+url = "/blog"
+weight = 1
